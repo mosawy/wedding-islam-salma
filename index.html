@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta property="og:title" content="دعوة فرح إسلام وسلمى">
-<meta property="og:description" content="يتشرفون بدعوتكم لحضور حفل زفافهم · الخميس ٢٤ ديسمبر">
+<meta property="og:description" content="يتشرفون بدعوتكم لحضور حفل زفافهم · الخميس ٢٤ ديسمبر من ٧ إلى ١١ مساءً">
 <style>img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
@@ -181,6 +181,7 @@ canvas#dust{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-
     <h1 class="names"><span class="foil">إسلام</span><span class="and">♡</span><span class="foil">سلمى</span></h1>
     <div class="sub">يتشرفون بدعوتكم لمشاركتهم<br>فرحة ليلة العمر</div>
     <div class="datechip">الخميس <i></i> ٢٤ ديسمبر <i></i> ٢٠٢٦</div>
+    <div class="sub" style="margin-top:12px">من الساعة ٧ إلى ١١ مساءً</div>
   </div>
   <div class="scroll">مرّر لأسفل<span></span></div>
 </header>
@@ -206,7 +207,7 @@ canvas#dust{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-
       <div class="mon">ديسمبر ٢٠٢٦</div>
       <div class="grid" id="calGrid"></div>
     </div>
-    <div class="when">الخميس ٢٤ ديسمبر <span>· الساعة ٨ مساءً</span></div>
+    <div class="when">الخميس ٢٤ ديسمبر <span>· من ٧ إلى ١١ مساءً</span></div>
     <div class="count" aria-live="off">
       <div><b id="cd">٠</b><span>يوم</span></div>
       <div><b id="ch">٠</b><span>ساعة</span></div>
@@ -219,9 +220,9 @@ canvas#dust{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-
 <section class="band wrap">
   <div class="col rv">
     <div class="eyebrow">المكان</div>
-    <div class="venue">قاعة الياسمين</div>
-    <div class="addr">فندق النيل الكبير · التجمع الخامس<br>القاهرة الجديدة</div>
-    <a class="btn" href="https://www.google.com/maps/search/?api=1&query=New+Cairo+Fifth+Settlement" target="_blank" rel="noopener">
+    <div class="venue">مكان الحفل</div>
+    <div class="addr">اضغط على الزرار عشان توصل للمكان على الخريطة</div>
+    <a class="btn" href="https://maps.app.goo.gl/ffExS66972y5pceb9" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
       افتح اللوكيشن
     </a>
@@ -252,7 +253,7 @@ for(let i=0;i<first;i++)g.insertAdjacentHTML('beforeend','<div class="d off">.</
 for(let d=1;d<=31;d++)g.insertAdjacentHTML('beforeend',`<div class="d${d===24?' hit':''}">${ar(d)}</div>`);
 
 // countdown
-const target=new Date('2026-12-24T20:00:00+02:00').getTime();
+const target=new Date('2026-12-24T19:00:00+02:00').getTime();
 function tick(){const t=Math.max(0,target-Date.now())/1e3;
   [['cd',t/86400],['ch',t%86400/3600],['cm',t%3600/60],['cs',t%60]].forEach(([id,v])=>document.getElementById(id).textContent=ar(Math.floor(v)));}
 tick();setInterval(tick,1000);
